@@ -32,6 +32,7 @@ namespace API.Controllers
             //Il metodo Find() deve avere come parametro una primary key
             return await _context.Users.FindAsync(id);
             
+            
         }
     }
 }
