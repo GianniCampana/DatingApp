@@ -18,7 +18,7 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 //in questo punto sempre per il problema della Cors aggiungo questa riga di codice che dice che va bene qualsiasi header di qualsiasi metodo di qualsiasi origine
-app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 app.MapControllers();
 
 app.Run();
